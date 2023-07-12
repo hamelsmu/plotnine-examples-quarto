@@ -109,7 +109,7 @@
     "href": "index.html",
     "title": "Plotnine Gallery",
     "section": "",
-    "text": "Spiral Animation\n\n\n\n\n&lt;Figure Size: (640 x 480)&gt;\n\n\nSource: PlotnineAnimation.ipynb\n\n\n\n\n\n\n\n\nTwo variable bar plot\n\n\n\n\n&lt;Figure Size: (640 x 480)&gt;\n\n\nSource: geom_col.ipynb\n\n\n\n\n\n\n\n\nShading a region under a density curve\n\n\n\n\n&lt;Figure Size: (640 x 480)&gt;\n\n\nSource: geom_density.ipynb\n\n\n\n\n\n\n\n\nThe political territories of Westeros\n\n\n\n\n&lt;Figure Size: (800 x 1200)&gt;\n\n\nSource: geom_map.ipynb\n\n\n\n\n\n\n\n\nRanges of similar variables\n\n\n\n\nSource: geom_segment.ipynb\n\n\n\n\n\n\n\n\nChange in Rank\n\n\n\n\nSource: geom_segment.ipynb"
+    "text": "Spiral Animation\n\n\n\n\n&lt;Figure Size: (640 x 480)&gt;\n\n\n\n\n\n\n\n\n\n\n\nTwo variable bar plot\n\n\n\n\n&lt;Figure Size: (640 x 480)&gt;\n\n\n\n\n\n\n\n\n\n\n\nShading a region under a density curve\n\n\n\n\n&lt;Figure Size: (640 x 480)&gt;\n\n\n\n\n\n\n\n\n\n\n\nThe political territories of Westeros\n\n\n\n\n&lt;Figure Size: (800 x 1200)&gt;\n\n\n\n\n\n\n\n\n\n\n\nRanges of similar variables\n\n\n\n\n\n\n\n\n\n\n\n\n\nChange in Rank\n\n\n\n\n\n\n\nprint(\"{{&lt; embed PlotnineAnimation.ipynb#spiral &gt;}}\")"
   },
   {
     "objectID": "geom_point.html",

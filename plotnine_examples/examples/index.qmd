@@ -1,5 +1,6 @@
 ---
 title: "Plotnine Gallery"
+notebook-links: false
 ---
 
 ::: {.content-block .grid .gap-4}
@@ -29,3 +30,9 @@ title: "Plotnine Gallery"
 :::
 
 :::
+
+
+```{python}
+#| output: asis
+print("{{< embed PlotnineAnimation.ipynb#spiral >}}")
+```

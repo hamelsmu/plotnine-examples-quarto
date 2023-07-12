@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -101,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="PlotnineAnimation.ipynb.html"><i class="bi bi-journal-code"></i>PlotnineAnimation.ipynb</a></li><li><a href="geom_col.ipynb.html"><i class="bi bi-journal-code"></i>geom_col.ipynb</a></li><li><a href="geom_density.ipynb.html"><i class="bi bi-journal-code"></i>geom_density.ipynb</a></li><li><a href="geom_map.ipynb.html"><i class="bi bi-journal-code"></i>geom_map.ipynb</a></li><li><a href="geom_segment.ipynb.html"><i class="bi bi-journal-code"></i>geom_segment.ipynb</a></li></ul></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -124,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="content-block grid gap-4">
 <div class="g-col-6 g-col-md-4">
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="PlotnineAnimation.ipynb" data-notebook-title="Spiral Animation ###">
 <div id="spiral" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-05-08T15:50:22.450814Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-05-08T15:50:22.450451Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-05-08T15:50:22.740072Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-05-08T15:50:22.739519Z&quot;}" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div id="spiral-1" class="quarto-figure quarto-figure-center anchored">
@@ -138,10 +172,10 @@ ul.task-list li input[type="checkbox"] {
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<a class="quarto-notebook-link" id="nblink-1" href="PlotnineAnimation.ipynb.html#spiral">Source: PlotnineAnimation.ipynb</a></div>
+</div>
 </div>
 <div class="g-col-6 g-col-md-4">
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="geom_col.ipynb" data-notebook-title="Two Variable Bar Plot">
 <div id="two_variable_bar_plot" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-05-08T15:51:28.527984Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-05-08T15:51:28.527725Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-05-08T15:51:28.820313Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-05-08T15:51:28.819746Z&quot;}" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div id="two_variable_bar_plot-1" class="quarto-figure quarto-figure-center anchored">
@@ -155,10 +189,10 @@ ul.task-list li input[type="checkbox"] {
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<a class="quarto-notebook-link" id="nblink-2" href="geom_col.ipynb.html#two_variable_bar_plot">Source: geom_col.ipynb</a></div>
+</div>
 </div>
 <div class="g-col-6 g-col-md-4">
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="geom_density.ipynb" data-notebook-title="Density Plot">
 <div id="density_curve" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-05-08T15:51:38.781306Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-05-08T15:51:38.781061Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-05-08T15:51:39.140996Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-05-08T15:51:39.140420Z&quot;}" data-execution_count="12">
 <div class="cell-output cell-output-display">
 <div id="density_curve-1" class="quarto-figure quarto-figure-center anchored">
@@ -172,10 +206,10 @@ ul.task-list li input[type="checkbox"] {
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<a class="quarto-notebook-link" id="nblink-3" href="geom_density.ipynb.html#density_curve">Source: geom_density.ipynb</a></div>
+</div>
 </div>
 <div class="g-col-6 g-col-md-4">
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="geom_map.ipynb" data-notebook-title="The Political Territories of Westeros">
 <div id="map" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-05-08T15:52:11.088216Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-05-08T15:52:11.087647Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-05-08T15:52:13.006801Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-05-08T15:52:13.006197Z&quot;}" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div id="map-1" class="quarto-figure quarto-figure-center anchored">
@@ -189,10 +223,10 @@ ul.task-list li input[type="checkbox"] {
 <pre><code>&lt;Figure Size: (800 x 1200)&gt;</code></pre>
 </div>
 </div>
-<a class="quarto-notebook-link" id="nblink-4" href="geom_map.ipynb.html#map">Source: geom_map.ipynb</a></div>
+</div>
 </div>
 <div class="g-col-6 g-col-md-4">
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="geom_segment.ipynb" data-notebook-title="Ranges of Similar Variables">
 <div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2022-09-27T11:16:10.761626Z&quot;,&quot;iopub.status.busy&quot;:&quot;2022-09-27T11:16:10.761308Z&quot;,&quot;iopub.status.idle&quot;:&quot;2022-09-27T11:16:12.134698Z&quot;,&quot;shell.execute_reply&quot;:&quot;2022-09-27T11:16:12.134182Z&quot;}" data-execution_count="9">
 <div class="cell-output cell-output-display">
 <div id="ranges" class="quarto-figure quarto-figure-center anchored">
@@ -203,10 +237,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<a class="quarto-notebook-link" id="nblink-5" href="geom_segment.ipynb.html">Source: geom_segment.ipynb</a></div>
+</div>
 </div>
 <div class="g-col-6 g-col-md-4">
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="geom_segment.ipynb" data-notebook-title="Ranges of Similar Variables">
 <div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2022-09-27T11:16:12.203551Z&quot;,&quot;iopub.status.busy&quot;:&quot;2022-09-27T11:16:12.203291Z&quot;,&quot;iopub.status.idle&quot;:&quot;2022-09-27T11:16:12.811207Z&quot;,&quot;shell.execute_reply&quot;:&quot;2022-09-27T11:16:12.810538Z&quot;}" data-execution_count="14">
 <div class="cell-output cell-output-display">
 <div id="rank" class="quarto-figure quarto-figure-center anchored">
@@ -217,9 +251,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<a class="quarto-notebook-link" id="nblink-6" href="geom_segment.ipynb.html">Source: geom_segment.ipynb</a></div>
 </div>
 </div>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">{{</span><span class="st">&lt; embed PlotnineAnimation.ipynb#spiral &gt;</span><span class="sc">}}</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p></p>
 
 
 
