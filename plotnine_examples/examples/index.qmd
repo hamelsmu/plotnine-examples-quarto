@@ -5,27 +5,27 @@ notebook-links: false
 
 ```{python}
 #|echo: false
-plots=['PlotnineAnimation.ipynb#spiral',
-       'geom_col.ipynb#two_variable_bar_plot',
-       'geom_density.ipynb#density_curve',
-       'geom_map.ipynb#map',
-       'geom_segment.ipynb#ranges',
-       'geom_segment.ipynb#rank']
-
-def create_gallery(ids, outfile='_gallery.qmd'):
+def create_gallery(ids, height_px=250, outfile='_gallery.qmd'):
+    "Create .qmd file with gallery of plots"
     gallery = ""
     for id in ids:
         gallery += '\n::: {.g-col-6 .g-col-md-4}\n'
         gallery += f"{{{{< embed {id} >}}}}"
         gallery += '\n:::\n'
     with open(outfile, 'w') as f:
-        f.write("---\n---\n\n::: {.content-block .grid .gap-4}\n\n")
+        f.write(f"---\n---\n\n::: {{.content-block .grid .gap-4}}\n\n")
         f.write(gallery)
         f.write("\n\n:::\n")
+```
 
-create_gallery(plots)
+```{python}
+#|echo: false
+create_gallery(ids = ['PlotnineAnimation.ipynb#spiral',
+       'geom_col.ipynb#two_variable_bar_plot',
+       'geom_density.ipynb#density_curve',
+       'geom_map.ipynb#map',
+       'geom_segment.ipynb#ranges',
+       'geom_segment.ipynb#rank'])
 ```
 
 {{< include _gallery.qmd >}}
-
-
