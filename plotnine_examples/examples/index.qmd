@@ -3,36 +3,29 @@ title: "Plotnine Gallery"
 notebook-links: false
 ---
 
-::: {.content-block .grid .gap-4}
-
-::: {.g-col-6 .g-col-md-4}
-{{< embed PlotnineAnimation.ipynb#spiral >}}
-:::
-
-::: {.g-col-6 .g-col-md-4}
-{{< embed geom_col.ipynb#two_variable_bar_plot >}}
-:::
-
-::: {.g-col-6 .g-col-md-4}
-{{< embed geom_density.ipynb#density_curve >}}
-:::
-
-::: {.g-col-6 .g-col-md-4}
-{{< embed geom_map.ipynb#map >}}
-:::
-
-::: {.g-col-6 .g-col-md-4}
-{{< embed geom_segment.ipynb#ranges >}}
-:::
-
-::: {.g-col-6 .g-col-md-4}
-{{< embed geom_segment.ipynb#rank >}}
-:::
-
-:::
-
-
 ```{python}
-#| output: asis
-print("{{< embed PlotnineAnimation.ipynb#spiral >}}")
+#|echo: false
+plots=['PlotnineAnimation.ipynb#spiral',
+       'geom_col.ipynb#two_variable_bar_plot',
+       'geom_density.ipynb#density_curve',
+       'geom_map.ipynb#map',
+       'geom_segment.ipynb#ranges',
+       'geom_segment.ipynb#rank']
+
+def create_gallery(ids, outfile='_gallery.qmd'):
+    gallery = ""
+    for id in ids:
+        gallery += '\n::: {.g-col-6 .g-col-md-4}\n'
+        gallery += f"{{{{< embed {id} >}}}}"
+        gallery += '\n:::\n'
+    with open(outfile, 'w') as f:
+        f.write("---\n---\n\n::: {.content-block .grid .gap-4}\n\n")
+        f.write(gallery)
+        f.write("\n\n:::\n")
+
+create_gallery(plots)
 ```
+
+{{< include _gallery.qmd >}}
+
+

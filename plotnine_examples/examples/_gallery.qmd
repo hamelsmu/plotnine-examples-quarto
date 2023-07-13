@@ -1,0 +1,32 @@
+---
+---
+
+::: {.content-block .grid .gap-4}
+
+
+::: {.g-col-6 .g-col-md-4}
+{{< embed PlotnineAnimation.ipynb#spiral >}}
+:::
+
+::: {.g-col-6 .g-col-md-4}
+{{< embed geom_col.ipynb#two_variable_bar_plot >}}
+:::
+
+::: {.g-col-6 .g-col-md-4}
+{{< embed geom_density.ipynb#density_curve >}}
+:::
+
+::: {.g-col-6 .g-col-md-4}
+{{< embed geom_map.ipynb#map >}}
+:::
+
+::: {.g-col-6 .g-col-md-4}
+{{< embed geom_segment.ipynb#ranges >}}
+:::
+
+::: {.g-col-6 .g-col-md-4}
+{{< embed geom_segment.ipynb#rank >}}
+:::
+
+
+:::
